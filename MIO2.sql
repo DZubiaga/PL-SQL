@@ -6,3 +6,7 @@ BEGIN
   SELECT COUNT(*) INTO NUMERO FROM TRABAJADORES WHERE IDCENTRO = V_ID;
   OPEN T_CURSOR FOR 'SELECT * INTO T_CURSOR FROM CENTROS WHERE ID = V_ID';
 END;
+
+select * from trab where centro = ?;
+select * from centros where id = ?;
+
